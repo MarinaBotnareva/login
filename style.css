@@ -28,11 +28,11 @@ button{
 
 
 
-.withoutbag {
+.withoutbug {
   display: none; 
 }
 
-.bag {
+.bug {
   display: flex; 
   color: #c00;
 }

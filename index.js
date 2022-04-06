@@ -5,14 +5,13 @@ const loginData = {};
 
 const unameInput = document.querySelector('[name="uname"]');
 const passInput = document.querySelector('[name="password"]');
-const bag1 = document.querySelector('#e-login');
-const bag2 = document.querySelector('#e-login2');
-const bag3 = document.querySelector('#e-pass');
+const bug1 = document.querySelector('#e-login');
+const bug2 = document.querySelector('#e-pass');
 
 function checkUname(){
   const letters = /[а-я]/;
   if(loginData.uname = ''|| loginData.uname.match(letters)) {
-    bag1.classList.add("bag");
+    bug1.classList.add("bug");
     return false;
   } 
 }
@@ -20,7 +19,7 @@ function checkUname(){
 function checkPass(){
  
   if(loginData.password.length < 6){
-    bag3.classList.add("bag");
+    bug2.classList.add("bug");
     return false;
   }
 }
