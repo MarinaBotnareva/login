@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./index.js"></script>
+</head>
+<body>
+  <div class="container">
+  <form id="log-form">
+    <h1>Login</h1>
+    <input type="text" name="uname" placeholder="User Name">
+    <span id="e-login" class="withoutbag">Неправильно набран логин</span>
+    <span id="e-login2" class="withoutbag">Поле обязательно к заполнению</span>
+    <input type="password" autocomplete="new-password" name="password" placeholder="Password">
+    <span id="e-pass" class="withoutbag">Пароль должен быть не меньше 6 символов</span>
+    <button type="submit">Log in</button>
+  </form>
+</div>
+</body>
+</html>
