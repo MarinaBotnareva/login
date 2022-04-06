@@ -10,7 +10,7 @@ const bug2 = document.querySelector('#e-pass');
 
 function checkUname(){
   const letters = /[а-я]/;
-  if(loginData.uname = ''|| loginData.uname.match(letters)) {
+  if(loginData.uname.match(letters) || loginData.uname.length < 3) {
     bug1.classList.add("bug");
     return false;
   } 
