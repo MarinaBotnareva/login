@@ -14,6 +14,9 @@ function checkUname(){
     bug1.classList.add("bug");
     return false;
   } 
+  if(!loginData.uname.match(letters) && loginData.uname.length >= 3){
+    bug1.classList.remove("bug");
+  } 
 }
 
 function checkPass(){
@@ -21,6 +24,8 @@ function checkPass(){
   if(loginData.password.length < 6){
     bug2.classList.add("bug");
     return false;
+  }if(loginData.password.length >= 6){
+  bug2.classList.remove("bug");
   }
 }
 
